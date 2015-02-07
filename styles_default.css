@@ -3,5 +3,73 @@
 /* first started: 5 Feb 2015 */
 
 body {
-	background-color: #00AEB8;
+	background-color: #ecf0f1;
+	color: black;
+}
+
+.new {
+	margin-top: 2em;
+	text-align: right;
+	font-size: 1em;
+	color:#3987C8;
+	font-weight: bold;
+
+}
+
+.airportWay {
+	font-family: "Days One" , serif;
+	color: black;
+	font-size: 2em;
+	/*background-color: #579532;*/
+	text-align: center;
+	/*border: 3px solid black;
+	border-radius: .2em;*/
+	margin-top: 1em;
+	
+}
+
+.contact {
+	margin-top: 1em;
+	font-size: 1em;
+
+}
+
+.serviceGlass {
+	font-size: 2.75em;
+	font-weight: bold;
+	text-align: center;
+
+	
+}
+
+.topBorder {
+	/*background-color: #27ae60;*/
+	height: 9px;
+	padding: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.topBorderRow {
+	padding: 0;
+	/*margin-right: 0;*/
+	margin-left: 0;
+	width: 100%;
+}
+
+.blurb {
+	text-indent: 2em;
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-top: 1em;
+}
+
+span {
+	color: #80BA5D;
+}
+
+.map {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
