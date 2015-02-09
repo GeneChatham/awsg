@@ -7,39 +7,8 @@ body {
 	color: black;
 }
 
-.new {
-	margin-top: 2em;
-	text-align: right;
-	font-size: 1em;
-	color:#3987C8;
-	font-weight: bold;
-
-}
-
-.airportWay {
-	font-family: "Days One" , serif;
-	color: black;
-	font-size: 2em;
-	/*background-color: #579532;*/
-	text-align: center;
-	/*border: 3px solid black;
-	border-radius: .2em;*/
-	margin-top: 1em;
-	
-}
-
-.contact {
-	margin-top: 1em;
-	font-size: 1em;
-
-}
-
-.serviceGlass {
-	font-size: 2.75em;
-	font-weight: bold;
-	text-align: center;
-
-	
+.column, .columns{
+  min-height: 1px;
 }
 
 .topBorder {
@@ -57,19 +26,65 @@ body {
 	width: 100%;
 }
 
+.hours {
+	padding-top: 1.5em;
+	text-align: right;
+}
+
+.businessName {
+	font-family: "Days One" , serif;
+	color: black;
+	font-size: 2.5em;
+	/*background-color: #579532;*/
+	text-align: center;
+	/*border: 3px solid black;
+	border-radius: .2em;*/
+	margin-top: 0.6em;
+}
+
+.contact {
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.new {
+	margin-top: 1.25em;
+	text-align: center;
+	font-size: 1.5em;
+	color:#80BA5D;
+	font-weight: bold;
+}
+
 .blurb {
 	text-indent: 2em;
 	padding-left: 5em;
 	padding-right: 5em;
 	padding-top: 1em;
+	text-align: center;
 }
 
-span {
+.services {
+	font-weight: bold;
+}
+
+.locations {
+	background-color: #ecf0f1;
+	padding: 2 1 1 0;
+	/*margin: 2 1 1 0;*/
+}
+
+.soon {
 	color: #80BA5D;
+	text-align: center;
 }
 
 .map {
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 0.8em;
 }
