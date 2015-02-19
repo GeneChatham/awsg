@@ -71,6 +71,14 @@ body {
 	color: #0077ab;
 }
 
+.photo-background {
+	background: url(monroe.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: border-box;
+	opacity: 50%;
+}
+
 .blurb {
 	text-indent: 2em;
 	padding-top: 1em;
@@ -81,18 +89,24 @@ body {
 	background-color: #ecf0f1;
 	border: .25em solid #80BA5D;
 	border-radius: .35em;
-	margin: 0 0 0 0;
-	padding: 0px 0px 0 0px;
+	height: 280px;
+	margin: 10px 10px 10px 10px;
+	max-width: 95%;
+
 
 }
 
 .services {
 	color: white;
 	font-weight: bold;
+	font-size: 1.25em;
 	text-align: right;
+	line-height: 100%;
 	background-color: #80BA5D;
 	border: .25em solid #80BA5D;
 	height: 60px;
+	margin: 0;
+	padding-right: 1em;
 
 }
 
