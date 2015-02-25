@@ -5,26 +5,25 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-	    <meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <title>Main Street Glass Monroe</title>
-	    <link rel="stylesheet" href="foundation.css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Street Glass Monroe</title>
+    <link rel="stylesheet" href="foundation.css" />
 		<link rel="stylesheet" href="styles_default.css">
-	    <script src="modernizr.js"></script>
-		<script type="text/javascript" src="js_default.js"></script>
+    <script src="modernizr.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-		<!-- google analytics -->
+	<!-- google analytics -->
 		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59923311-1', 'auto');
-  ga('send', 'pageview');
-  	</script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})
+			(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-59923311-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</head>
 
 	<body>
@@ -37,20 +36,28 @@
 		</div>
 
 		<div class="row">
+			<div class="small-12 medium-6 columns businessName">
+					<img src="capital-logo.png">
+			</div>
 			<div style="font-size:1.2em" class="columns small-12 medium-3 hours">
-				Monday - Friday<br>8AM - 5PM
+					<p id="phone"><a style="font-size:1.3em" href="tel:+13602178443">(360) 217-8443</a><br>fax: (360) 794-4911
+					</p>
+					Monday - Friday<br>8AM - 5PM
 			</div>
 
-			<div class="small-12 medium-6 columns businessName">
-					Main Street Glass
-			</div>
 			<div class="small-12 medium-3 columns contact">
-				<p>	<a style="font-size:1.3em" href="tel:+13602178443">(360) 217-8443</a><br>fax: (360) 794-4911<br><button>201 E Main Street<br>Monroe, WA 98272<br><i>click for map</i></button></p>	
+				<button class="map-button">201 E Main Street<br>Monroe, WA 98272<br><br><i>click for map</i></button>	
 			</div>	
 		</div>
 
-		
+<!-- MAP iFRAME -->
+		<div class="row">
+			<div style="background-color:#CCCCCC" class="map columns small-12 medium-8 medium-offset-2">
+				<iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2677.1299229122415!2d-121.969088!3d47.856446999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549aa6f654c5b1e3%3A0x7a2d803ad886e1e1!2sSpeedy+Glass!5e0!3m2!1sen!2sus!4v1423283763199" width="600" height="450" frameborder="0" style="border:0"></iframe>
+			</div>		
+		</div>
 
+<!-- BLURB -->
 		<div class="photo-background">
 			<div class="row">
 				<div class="small-12 columns new">
@@ -64,7 +71,6 @@
 				</div>
 			</div>
 
-
 			<div class="row">
 				<div class="small-12 columns blurb">
 					<p>
@@ -73,6 +79,7 @@
 				</div>
 			</div>
 
+<!-- TILES WITH SERVICES -->
 			<div class="row">
 				<div class="columns small-0 medium-2">
 				</div>
@@ -129,6 +136,7 @@
 			
 			</div>
 
+<!-- PARTNER LOCATIONS -->
 			<div class="columns small-12 locations">
 					
 					<div class="row">
@@ -161,11 +169,8 @@
 			</div>
 		</div>
 		
-		<div style="background-color:#CCCCCC" class="map">
 
-			<iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2677.1299229122415!2d-121.969088!3d47.856446999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549aa6f654c5b1e3%3A0x7a2d803ad886e1e1!2sSpeedy+Glass!5e0!3m2!1sen!2sus!4v1423283763199" width="600" height="450" frameborder="0" style="border:0"></iframe>
-		</div>		
-
+<!-- COPYRIGHT -->
 		<div class="row">
 			<div class="small-12 columns">
 				<p class="copyright">
@@ -181,9 +186,10 @@
 
 		
 
-
+<!-- SCRIPTS -->
 	    <script src="jquery.js"></script>
 	    <script src="foundation.min.js"></script>
+			<script type="text/javascript" src="js_default.js"></script>
 	    <script>
 	      $(document).foundation();
 	    </script>

@@ -31,6 +31,10 @@ body {
 	text-align: right;
 }
 
+#phone {
+	margin-bottom: 5px;
+}
+
 .businessName {
 	font-family: "Days One" , serif;
 	color: black;
@@ -40,6 +44,7 @@ body {
 	/*border: 3px solid black;
 	border-radius: .2em;*/
 	margin-top: 0.6em;
+	margin-bottom: 0.6em;
 }
 
 #AWSG {
@@ -49,6 +54,18 @@ body {
 .contact {
 	margin-top: 1em;
 	font-size: 1em;
+}
+
+.map-button {
+	padding: 20px 10px;
+	/*border-radius: .35em;*/
+	/*text-align: right;*/
+	/*font-size: 1.1em;*/
+	margin-top: 0.6em;
+	/*min-width: 160px;*/
+	background: url("map.png") no-repeat;
+	background-size: contain;
+	color: blue;
 }
 
 .new {
@@ -122,9 +139,24 @@ body {
 }
 
 .map {
-	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	position: relative;
+	padding-bottom: 50%;
+	height: 0;
+	overflow: hidden;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	/*text-align: center;*/
+	/*padding-top: 1em;*/
+	/*padding-bottom: 1em;*/
+	/*display: none;*/
+}
+
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
 }
 
 .copyright {
