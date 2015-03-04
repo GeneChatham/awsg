@@ -140,12 +140,17 @@ img  {
 }
 
 .map {
-	display: none;
-
+	position: absolute;
+	left: -10000px;
+	height: 450px;
+	width: 600px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 1em;
 }
 
 .map iframe {
-
+	/*blank*/
 }
 
 .copyright {
