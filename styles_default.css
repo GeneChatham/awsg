@@ -167,11 +167,20 @@ body {
 .map {
 	position: absolute;
 	left: -10000px;
-	height: 450px;
-	width: 600px;
 	padding-left: 0;
 	padding-right: 0;
 	margin-bottom: 1em;
+	margin-top: 0.75em;
+}
+
+.big-map {
+	height: 450px;
+	width: 600px;
+}
+
+.small-map {
+	height: 400px;
+	width: 250px;
 }
 
 .partners {
