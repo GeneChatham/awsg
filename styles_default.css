@@ -57,16 +57,17 @@ img  {
 	font-size: 1em;
 }
 
-.map-button {
-	padding: 20px 10px;
-	/*border-radius: .35em;*/
-	/*text-align: right;*/
-	/*font-size: 1.1em;*/
-	margin-top: 0.6em;
-	/*min-width: 160px;*/
-	background: url("map.png") no-repeat;
-	background-size: contain;
-	color: blue;
+.map {
+}
+
+.map-button img {
+	box-shadow: 1px 1px #626262;
+}
+.map-button img:active {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	box-shadow: none;
 }
 
 .new {
@@ -90,7 +91,7 @@ img  {
 }
 
 .photo-background {
-	background: url(monroe.jpg);
+	background: url(images/monroe.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-origin: border-box;
