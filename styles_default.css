@@ -27,14 +27,28 @@ body {
 }
 
 .hours {
-	padding-top: 2em;
+	padding-top: .25em;
 	text-align: right;
+	font-size: 1.2em;
 	/*border: solid red 1px;*/
 }
 
-#phone {
-	margin-bottom: 5px;
+.phone {
+	padding-top: .25em;
+	text-align: left;
+	font-size: 1.2em;
+
 }
+
+.address {
+	font-size: 1.2em;
+	padding-top: .25em;
+}
+
+/*.logo-row {
+	background-color: #FCFDFD;
+	max-width: 100%;
+}*/
 
 .logo {
 	/*border: solid red 1px;	*/
@@ -59,12 +73,13 @@ body {
 
 .map-button {
 	/*border: solid red 1px;*/
-	padding-top: 2em;
+	/*padding-top: 1em;*/
+	text-align: right;
 }
 
 .map-button img {
 	box-shadow: 1px 1px #626262;
-	max-height: 125px;
+	max-height: 60px;
 }
 .map-button img:active {
 	position: relative;
@@ -93,12 +108,29 @@ body {
 	color: #0077ab;
 }
 
-.photo-background {
-	background: url(images/monroe.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-origin: border-box;
-	opacity: 50%;
+@media only screen and (min-width: 40.063em) {
+
+	.photo-background {
+		background: url(images/monroe_skinny.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-origin: border-box;
+		opacity: 10%;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	
+	.photo-background{
+		background-color: #99CCE2
+	}
+	/*.photo-background {
+		background: url(images/sky.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-origin: border-box;
+		opacity: 50%;
+	}*/
 }
 
 .blurb {
@@ -115,7 +147,7 @@ body {
 	border: .25em solid #80BA5D;
 	border-radius: .35em;
 	height: 280px;
-	margin: 10px 10px 20px 10px;
+	margin: 20px 10px 20px 10px;
 	max-width: 95%;
 
 
@@ -142,9 +174,9 @@ body {
 }
 
 .services.icon-home {
-	font-size: 3.5em;
+	font-size: 3.8em;
 	border: 0;
-	padding-top: 0.05em;
+	padding-top: 0.0em;
 }
 
 .services-list {
@@ -187,22 +219,45 @@ body {
 	margin-top: 1em;
 }
 
-.checkout {
+.checkout-big {
 	text-align: right;
+	margin-bottom: 1em;
+}
+
+.checkout-small {
+	text-align: left;
+	margin-bottom: 1em;
 }
 
 .partnerLogo img{
+	display: block;
 	max-height: 75px;
 	max-width: 300px;
-	text-align: right;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom: 1em;
 }
 
-.partnerContact {
+.partnerContact-small {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.partnerContact-big {
 	text-align: left;
+	margin-bottom: 1em;
+}
+
+.copyright-row {
+	background-color: #CCCCCC;
+	/*width: 100%;*/
+	margin-top: 1.5em;
+	max-width: 100%;
+	height: 2em;
 }
 
 .copyright {
 	text-align: center;
 	font-size: 0.8em;
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 }
