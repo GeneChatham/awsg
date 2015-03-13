@@ -101,7 +101,7 @@ body {
 @media only screen and (min-width: 40.063em) {
 
 	.photo-background-monroe {
-		background: url(images/monroe_skinny_optimized.jpg);
+		background: url(images/monroebackground.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-origin: border-box;
