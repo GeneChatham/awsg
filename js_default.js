@@ -1,7 +1,6 @@
 // <!-- Airport Way Service Glass -->
 // <!-- created by: Signal Cray Design LLC -->
-// <!-- first started: 5 Feb 2015 -->
-// <!-- completed: 12 Mar 2015 -->
+// <!-- 12 Mar 2015 -->
 
 $(document).ready(function(){
 
