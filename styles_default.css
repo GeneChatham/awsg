@@ -1,6 +1,7 @@
 /* Airport Way Service Glass */
-/* created by: Jill Chatham, Gene Chatham */
+/* created by: Signal Cray Design LLC */
 /* first started: 5 Feb 2015 */
+/* completed: 12 Mar 2015 */
 
 body {
 	background-color: #ecf0f1;
@@ -12,7 +13,6 @@ body {
 }
 
 .topBorder {
-	/*background-color: #27ae60;*/
 	height: 9px;
 	padding: 0;
 	margin-right: 0;
@@ -21,44 +21,40 @@ body {
 
 .topBorderRow {
 	padding: 0;
-	/*margin-right: 0;*/
 	margin-left: 0;
 	width: 100%;
 }
 
 .hours {
-	padding-top: .25em;
+	padding-top: .6em;
 	text-align: right;
-	font-size: 1.2em;
-	/*border: solid red 1px;*/
+}
+
+.hours img{
+	max-height: 45px;
 }
 
 .phone {
-	padding-top: .25em;
+	padding-top: .6em;
 	text-align: left;
-	font-size: 1.2em;
+}
 
+.phone img {
+	max-height: 45px;
 }
 
 .address {
-	font-size: 1.2em;
-	padding-top: .25em;
+	padding-top: 1em;
 }
 
-/*.logo-row {
-	background-color: #FCFDFD;
-	max-width: 100%;
-}*/
-
-.logo {
-	/*border: solid red 1px;	*/
+.address img {
+	max-height: 35px;
 }
 
 .logo img{
 	display: block;
 	margin: 0.5em auto;
 	max-height: 134px;
-	/*min-height: 134px;*/
 	
 }
 
@@ -66,20 +62,15 @@ body {
 	margin-top: .25em;
 }
 
-/*.contact {
-	margin-top: 1em;
-	font-size: 1em;
-}*/
 
 .map-button {
-	/*border: solid red 1px;*/
-	/*padding-top: 1em;*/
+	padding-top: 1em;
 	text-align: right;
 }
 
 .map-button img {
-	box-shadow: 1px 1px #626262;
 	max-height: 60px;
+	border: 2px solid #0078ad;
 }
 .map-button img:active {
 	position: relative;
@@ -110,27 +101,20 @@ body {
 
 @media only screen and (min-width: 40.063em) {
 
-	.photo-background {
-		background: url(images/monroe_skinny.jpg);
+	.photo-background-monroe {
+		background: url(images/monroe_skinny_optimized.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-origin: border-box;
-		opacity: 10%;
 	}
 }
 
 @media only screen and (max-width: 40em) {
 	
-	.photo-background{
-		background-color: #99CCE2
+	.photo-background-monroe{
+		background-color: #d8eace;
+		
 	}
-	/*.photo-background {
-		background: url(images/sky.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-origin: border-box;
-		opacity: 50%;
-	}*/
 }
 
 .blurb {
@@ -149,8 +133,6 @@ body {
 	height: 280px;
 	margin: 20px 10px 20px 10px;
 	max-width: 95%;
-
-
 }
 
 .services {
@@ -164,7 +146,6 @@ body {
 	height: 60px;
 	margin: 0;
 	padding-right: 1em;
-
 }
 
 .services.icon-car {
@@ -203,7 +184,6 @@ body {
 	margin-top: 0.75em;
 } 
   
-
 
 .big-map {
 	height: 450px;
