@@ -4,16 +4,10 @@
 
 $(document).ready(function(){
 
-
-  $(".map-button").click(function(e){
-    e.preventDefault();
-    if( !$('.map').hasClass("first-view") ) {
-      $(".map").hide();
-      $('.map').addClass("first-view"); 
-      $(".map").css("position", "static");
-    }
-    $(".map").slideToggle();
-  })
+  var loadMaps = function() {
+    $('.small-map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2677.1299229122415!2d-121.96908800000004!3d47.856446999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMain+Street+Glass+201+E+Main+St!5e0!3m2!1sen!2sus!4v1425942345806" width="250" height="350" frameborder="0" style="border:0"></iframe>');
+    $('.big-map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2677.1299229122415!2d-121.969088!3d47.856446999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549aa6f654c5b1e3%3A0x7a2d803ad886e1e1!2sMain+Street+Glass!5e0!3m2!1sen!2sus!4v1424926182298" width="600" height="450" frameborder="0" style="border:0"></iframe>');
+  }
 
   var styleMap = function() {
     $('.map').css("position", "relative");
@@ -26,5 +20,37 @@ $(document).ready(function(){
     $('.map iframe').css("width", "100% !important");
     $('.map iframe').css("height", "100% !important");
   }
+
+  var getScreenLayout = function() {
+    var result = {};
+    if( Foundation.utils.is_small_only() ) {
+      console.log("Small screen!");
+      result.size = 'small';
+    }else {
+      console.log("Medium-up screen!");
+      result.size = 'not-small'
+    }
+    return result;
+  }
+
+  $(".map-button").click(function(e){
+    e.preventDefault();
+    var map = '';
+    var screenLayout = getScreenLayout();
+    if( screenLayout.size == 'small') {
+      map = $('.small-map');
+    }else {
+      map = $('.big-map');
+    }
+    if( !$('.map').hasClass("first-view") ) {
+      $(".map").hide();
+      $('.map').addClass("first-view"); 
+      $(".map").css("position", "static");
+    }
+    $(".map").slideToggle();
+  })
+
+  loadMaps();
+  getScreenLayout();
 
 });
