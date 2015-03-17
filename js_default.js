@@ -23,12 +23,12 @@ $(document).ready(function(){
 
   var getScreenLayout = function() {
     var result = {};
-    if( Foundation.utils.is_small_only() ) {
-      console.log("Small screen!");
-      result.size = 'small';
+    if( Foundation.utils.is_large_up() ) {
+      console.log("Big screen!");
+      result.size = 'large-up';
     }else {
-      console.log("Medium-up screen!");
-      result.size = 'not-small'
+      console.log("Small or medium screen!");
+      result.size = 'small-medium'
     }
     return result;
   }
@@ -37,17 +37,31 @@ $(document).ready(function(){
     e.preventDefault();
     var map = '';
     var screenLayout = getScreenLayout();
-    if( screenLayout.size == 'small') {
+    if( screenLayout.size == 'small-medium') {
       map = $('.small-map');
+      if( $('.big-map').hasClass('open') ) {
+        $('.big-map').slideUp();
+        $('.big-map').removeClass('open');
+      }
     }else {
       map = $('.big-map');
+      if( $('.small-map').hasClass('open') ) {
+        $('.small-map').slideUp();
+        $('.small-map').removeClass('open');
+      }
     }
-    if( !$('.map').hasClass("first-view") ) {
-      $(".map").hide();
-      $('.map').addClass("first-view"); 
-      $(".map").css("position", "static");
+    if( !map.hasClass("first-view") ) {
+      map.hide();
+      map.addClass("first-view"); 
+      map.css("position", "static");
     }
-    $(".map").slideToggle();
+    if( map.hasClass('open') ) {
+      map.slideUp();
+      map.removeClass('open');
+    }else {
+      map.slideDown();
+      map.addClass('open');
+    }
   })
 
   loadMaps();
