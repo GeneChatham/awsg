@@ -57,6 +57,11 @@ body {
 	
 }
 
+.email {
+	padding-top: 0;
+	margin-top: 0;
+}
+
 #AWSG {
 	margin-top: .25em;
 }
@@ -99,21 +104,28 @@ body {
 }
 
 @media only screen and (min-width: 40.063em) {
-
 	.photo-background-monroe {
 		background: url(images/monroebackground.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-origin: border-box;
 	}
+/*	.photo-background-marysville {
+		background: url(images/marysville.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-origin: border-box;
+	}
+*/}
+
+@media only screen and (max-width: 40em) {	
+	.photo-background-monroe{
+		background-color: #d8eace;		
+	}
 }
 
-@media only screen and (max-width: 40em) {
-	
-	.photo-background-monroe{
-		background-color: #d8eace;
-		
-	}
+.photo-background-marysville{
+	background-color: #d8eace;		
 }
 
 .blurb {
