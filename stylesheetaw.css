@@ -63,6 +63,9 @@ body {
 	padding-top: 0;
 	margin-top: 0;
 }
+.email a {
+	color: #003399;
+}
 
 #AWSG {
 	margin-top: .25em;
@@ -145,7 +148,14 @@ body {
 }
 
 .blurb p{
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+}
+
+#call-for-quote {
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: bold;
+	/*margin-top: -5px;*/
 }
 
 .tile {
