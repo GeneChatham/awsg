@@ -1,0 +1,291 @@
+/* Airport Way Service Glass */
+/* created by: Signal Cray Design LLC */
+/* 12 Mar 2015 */
+
+/*stylesheet for airportwayserviceglass.com*/
+
+body {
+	background-color: #ecf0f1;
+	color: black;
+}
+
+a:link {
+	color: #003399;
+} 
+
+
+a:visited {
+	color: #003399; 
+}
+
+a:hover {
+	color: #003399;
+}
+
+a:active {
+	color: #003399;
+}
+
+.column, .columns{
+  min-height: 1px;
+}
+
+.topBorder {
+	height: 9px;
+	padding: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.topBorderRow {
+	padding: 0;
+	margin-left: 0;
+	width: 100%;
+}
+
+.hours {
+	padding-top: .6em;
+	text-align: right;
+}
+
+.hours img{
+	max-height: 45px;
+	margin-top: .2em;
+}
+
+.contact {
+	padding-top: .44em;
+	text-align: left;
+}
+
+.phone {
+	font-size: 1.2em;
+}
+
+.address {
+	padding-top: 1em;
+}
+
+.address img {
+	max-height: 35px;
+}
+
+.logo img{
+	display: block;
+	margin: 0.5em auto;
+	max-height: 115px;
+	
+}
+
+.email {
+	padding-top: 0;
+	margin-top: 0;
+}
+.email a {
+	color: #003399;
+}
+
+#AWSG {
+	margin-top: .25em;
+}
+
+
+.map-button {
+	padding-top: 1.35em;
+	text-align: right;
+}
+
+.map-button img {
+	max-height: 60px;
+	border: 2px solid #003399;
+}
+.map-button img:active {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	box-shadow: none;
+}
+
+.new {
+	margin-top: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	color:#80BA5D;
+	font-weight: bold;
+}
+
+.arc {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+.fa-check {
+	color: #003399;
+}
+
+.fa-car {
+	font-size: 2px;
+	color: #b2c1e0;
+}
+
+.fa-home {
+	font-size: 2px;
+	color: #b2c1e0;
+}
+
+@media only screen and (min-width: 40.063em) {
+	.photo-background-monroe {
+		background: url(images/monroebackground.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-origin: border-box;
+	}
+/*	.photo-background-marysville {
+		background: url(images/marysville.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-origin: border-box;
+	}
+*/}
+
+@media only screen and (max-width: 40em) {	
+	.photo-background-monroe{
+		background-color: #b2c1e0;		
+	}
+}
+
+.photo-background-marysville{
+	background-color: #b2c1e0;		
+}
+
+.blurb {
+	text-indent: 2em;
+	padding-top: 1em;
+}
+
+.blurb p{
+	margin-bottom: 5px;
+}
+
+#call-for-quote {
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: bold;
+	/*margin-top: -5px;*/
+}
+
+.tile {
+	background-color: #ecf0f1;
+	border: .25em solid #003399;
+	border-radius: .35em;
+	height: 280px;
+	margin: 20px 10px 20px 10px;
+	max-width: 95%;
+}
+
+.services {
+	color: white;
+	font-weight: bold;
+	font-size: 1.25em;
+	text-align: right;
+	line-height: 100%;
+	background-color: #003399;
+	border: .25em solid #003399;
+	height: 60px;
+	margin: 0;
+	padding-right: 1em;
+}
+
+.services.icon-car {
+	font-size: 3em;
+	border: 0;
+	padding-top: 0.1em;
+}
+
+.services.icon-home {
+	font-size: 3.8em;
+	border: 0;
+	padding-top: 0.0em;
+}
+
+.services-list {
+	padding-bottom: 0.5em;
+}
+
+
+.locations {
+	padding: 0.5em 0 2em 0;
+}
+
+.locations div {
+	margin-top: 0.25em;
+	padding-left: 1em;
+}
+
+.map {
+	position: absolute;
+	left: -10000px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 1em;
+	margin-top: 0.75em;
+} 
+  
+
+.big-map {
+	height: 450px;
+	width: 600px;
+}
+
+.small-map {
+	height: 350px;
+	width: 250px;
+}
+
+.partner {
+	margin-top: 1em;
+}
+
+.checkout-big {
+	text-align: right;
+	margin-bottom: 1em;
+}
+
+.checkout-small {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.partnerLogo img{
+	display: block;
+	max-height: 75px;
+	max-width: 300px;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom: 1em;
+}
+
+.partnerContact-small {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.partnerContact-big {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.copyright-row {
+	background-color: #CCCCCC;
+	margin-top: 1.5em;
+	max-width: 100%;
+	height: 2em;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 0.5em;
+}
