@@ -31,15 +31,20 @@ body {
 
 .hours img{
 	max-height: 45px;
+	margin-top: .2em;
 }
 
-.phone {
-	padding-top: .6em;
+.contact {
+	padding-top: .44em;
 	text-align: left;
 }
 
-.phone img {
-	max-height: 45px;
+.phone {
+	font-size: 1.2em;
+}
+
+#fax {
+	font-size: 0.97em;
 }
 
 .address {
@@ -66,9 +71,8 @@ body {
 	margin-top: .25em;
 }
 
-
 .map-button {
-	padding-top: 1em;
+	padding-top: 1.35em;
 	text-align: right;
 }
 
@@ -76,6 +80,7 @@ body {
 	max-height: 60px;
 	border: 2px solid #0078ad;
 }
+
 .map-button img:active {
 	position: relative;
 	top: 1px;

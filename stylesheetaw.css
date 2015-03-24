@@ -99,6 +99,7 @@ a:active {
 	max-height: 60px;
 	border: 2px solid #003399;
 }
+
 .map-button img:active {
 	position: relative;
 	top: 1px;
