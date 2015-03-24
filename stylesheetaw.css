@@ -181,7 +181,7 @@ a:active {
 	background-color: #ecf0f1;
 	border: .25em solid #003399;
 	border-radius: .35em;
-	height: 280px;
+	height: 295px;
 	margin: 20px 10px 20px 10px;
 	max-width: 95%;
 }
@@ -212,7 +212,7 @@ a:active {
 }
 
 .services-list {
-	padding-bottom: 0.5em;
+	padding-bottom: 1em;
 }
 
 
