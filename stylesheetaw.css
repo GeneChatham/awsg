@@ -143,13 +143,13 @@ a:active {
 		background-size: cover;
 		background-origin: border-box;
 	}
-/*	.photo-background-marysville {
-		background: url(images/marysville.jpg);
+	.photo-background-awsg {
+		background: url(images/awsgbackground2.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-origin: border-box;
 	}
-*/}
+}
 
 @media only screen and (max-width: 40em) {	
 	.photo-background-monroe{
@@ -157,7 +157,7 @@ a:active {
 	}
 }
 
-.photo-background-marysville{
+.photo-background-awsg{
 	background-color: #b2c1e0;		
 }
 
